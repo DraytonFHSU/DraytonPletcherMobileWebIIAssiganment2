@@ -16,6 +16,7 @@ export default function App() {
       <Profile name = {"Drayton Pletcher"} />
       <MyButton></MyButton>
       <Task/>
+      <Testing/>
     </View>
   );
 }
