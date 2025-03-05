@@ -5,18 +5,23 @@ import Profile from './app/components/Profile/Profile';
 import MyButton from './app/components/MyButton/MyButton';
 import TaskList from './app/components/Task/TaskList';
 import TaskData from './app/components/Task/TaskData'
-import Task from './app/components/Task/Task'
+import TaskDetails from './app/components/Task/TaskDetails';
+import Testing from './app/components/shared/Testing';
+
+const Stack = createStackNavigator();
 
 export default function App() {
   const [taskList, setTaskList] = useState(TaskData);
+  
   return (
     <View style={styles.container}>
 {/* done */}
       <Header></Header>
       <Profile name = {"Drayton Pletcher"} />
       <MyButton></MyButton>
-      <Task/>
-      <Testing/>
+      <TaskList/>
+      {/* <Testing/> */}
+
     </View>
   );
 }

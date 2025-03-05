@@ -3,7 +3,6 @@ import {Text, StyleSheet, View} from "react-native";
 
 export default function TaskProperties() {
   return (
-    // done
     <View style={styles.container}>
         <Text style={styles.properties}>Additional Description</Text>
         <Text style={styles.properties}>Date</Text>
