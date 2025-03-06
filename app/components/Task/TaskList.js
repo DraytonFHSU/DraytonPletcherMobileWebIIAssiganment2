@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { View, Text, ScrollView, StyleSheet, Button, TouchableOpacity } from 'react-native';
 import taskData from './TaskData';
 import Card from '../shared/Card';
-import { Image } from 'react-native-web';
+import { Image } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
 
  
 const TaskList = ({ navigation }) => {
@@ -23,15 +24,7 @@ const TaskList = ({ navigation }) => {
             onPress={() => toggleTaskCompletion(task.id)}
             color={completedTasks[task.id] ? 'green' : 'blue'}
           />
-          <TouchableOpacity
-            onPress={() =>
-              navigation.navigate('TaskDetails', {
-                task, // Pass the task object to the details screen
-              })
-            }
-          >
-            <Button title="View Details" />
-          </TouchableOpacity>
+          <Button title="View Details" onPress={() => navigation.navigate('TaskDetails', {task})}>View Details</Button>
         </Card>
       ))}
     </ScrollView>
@@ -46,7 +39,7 @@ const styles = StyleSheet.create({
   },
   container: {
     padding: 20,
-    width: '75%'
+    width: '75%',
   },
   title: {
     fontSize: 18,

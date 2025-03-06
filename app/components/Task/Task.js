@@ -25,6 +25,7 @@ const styles = StyleSheet.create({
     flexDirection: "column",
     padding: 25,
     paddingTop: 20,
+    
   },
   image: {
     height: 70,

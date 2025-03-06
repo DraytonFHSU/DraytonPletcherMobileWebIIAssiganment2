@@ -20,7 +20,6 @@ export default function MyButton() {
 
 const styles = StyleSheet.create({
   textStyle: {
-    flex: 0.2,
     color: '#6c5',
   },
   buttonStyle:{

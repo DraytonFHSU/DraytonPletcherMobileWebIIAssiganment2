@@ -7,6 +7,7 @@ const TaskDetails = ({ route }) => {
   return (
     <View style={styles.container}>
       <Image source={task.image} style={styles.image} />
+      <Text style={styles.id}>Task ID: {task.id}</Text>
       <Text style={styles.title}>{task.title}</Text>
       <Text style={styles.description}>{task.description}</Text>
     </View>

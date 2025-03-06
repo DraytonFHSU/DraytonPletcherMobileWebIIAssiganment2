@@ -8,7 +8,6 @@ export default function Header() {
 
 const styles = StyleSheet.create({
     header: {
-      flex: 0.1,
       fontSize: 20,
       backgroundColor: '#fef',
       color: "#b0b",
